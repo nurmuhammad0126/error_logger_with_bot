@@ -1,0 +1,30 @@
+name: error_logger_example
+# description: Example app demonstrating how to use error_logger_with_bot package
+
+# # This prevents the example from being published as a separate package
+# publish_to: 'none'
+
+# version: 1.0.0+1
+
+# environment:
+#   sdk: '>=3.0.0 <4.0.0'
+#   flutter: ">=3.0.0"
+
+# dependencies:
+#   flutter:
+#     sdk: flutter
+  
+#   # Reference to the parent package
+#   error_logger_with_bot:
+#     path: ../
+  
+#   # Required for making HTTP requests in the example
+#   dio: ^5.0.0
+
+# dev_dependencies:
+#   flutter_test:
+#     sdk: flutter
+#   flutter_lints: ^2.0.0
+
+# flutter:
+#   uses-material-design: true
