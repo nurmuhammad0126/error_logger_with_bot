@@ -1,0 +1,22 @@
+name: error_logger_with_bot
+description: Flutter package for sending error logs and custom messages to Telegram bot. Easy setup, detailed device info, and automatic fallback support.
+version: 1.0.0
+homepage: https://github.com/yourusername/error_logger_with_bot
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  dio: ^5.0.0
+  device_info_plus: ^9.0.0
+  package_info_plus: ^4.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
