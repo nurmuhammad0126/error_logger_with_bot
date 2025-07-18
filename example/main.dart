@@ -1,4 +1,4 @@
-import 'package:error_logger_with_bot/error_bot_service.dart';
+import 'package:error_logger_with_bot/error_logger_with_bot.dart';
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
 
@@ -6,7 +6,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   // Initialize ErrorLoggerWithBot
-  ErrorService.init(
+  ErrorLoggerWithBot.init(
     botToken: 'YOUR_BOT_TOKEN_HERE', // Replace with your bot token
     chatId:
         'YOUR_CHAT_ID_HERE', // Replace with your chat ID (for groups: '-1001234567890')
@@ -148,7 +148,7 @@ class _MyHomePageState extends State<MyHomePage> {
       await _dio.get('https://jsonplaceholder.typicode.com/posts/999999');
     } on DioException catch (e, stackTrace) {
       // Send error to Telegram
-      await ErrorService.sendError(
+      await ErrorLoggerWithBot.sendError(
         error: e,
         stackTrace: stackTrace,
       );
@@ -171,7 +171,7 @@ class _MyHomePageState extends State<MyHomePage> {
         type: DioExceptionType.unknown,
       );
 
-      await ErrorService.sendError(
+      await ErrorLoggerWithBot.sendError(
         error: fakeError,
         stackTrace: stackTrace,
         customTemplate: (error, time, appName) {

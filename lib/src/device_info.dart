@@ -1,4 +1,4 @@
-part of '../error_bot_service.dart';
+part of '../error_logger_with_bot.dart';
 
 class AppDeviceInfo {
   final String device;

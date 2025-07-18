@@ -1,6 +1,6 @@
-part of '../error_bot_service.dart';
+part of '../error_logger_with_bot.dart';
 
-class ErrorService with ErrorMessageFormatter {
+class ErrorLoggerWithBot with ErrorMessageFormatter {
   static late final String _botToken;
   static late final String _chatId;
   static late final String _appName;
